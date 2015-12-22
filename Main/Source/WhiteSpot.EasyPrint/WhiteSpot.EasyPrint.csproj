@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{53809DE8-74B9-4FF9-A848-A912B945088C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WhiteSpot.EasyPrint</RootNamespace>
+    <AssemblyName>WhiteSpot.EasyPrint</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+    <ProjectMode>SharePointApp</ProjectMode>
+    <AppFeaturePartId>{9011c1be-94a2-4189-ba87-9c3c594e51c5}</AppFeaturePartId>
+    <WspPartId>{f822e05b-5fb7-4a4d-ab2d-b77f4300958f}</WspPartId>
+    <WorkflowPartId>{0099d4c3-10c7-484a-b1b9-ae81e0db2565}</WorkflowPartId>
+    <CspkgPartId>{18d14112-f46b-4a3b-ae1f-9f096fc758d0}</CspkgPartId>
+    <SqlPackagePartId>{9e643851-621d-4824-b643-e5e879776c65}</SqlPackagePartId>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <ActivePublishProfile>Easy Print</ActivePublishProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="AppIcon.png">
+      <OpcRelationship>manifest-icon</OpcRelationship>
+    </Content>
+    <Content Include="EasyPrintAppPart\Elements.xml">
+      <OpcRelationship>feature-elementmanifest</OpcRelationship>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <AppManifestFile Include="AppManifest.xml">
+      <SubType>Designer</SubType>
+    </AppManifestFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WhiteSpot.EasyPrintWeb\WhiteSpot.EasyPrintWeb.csproj">
+      <Project>{B3EC1C84-B13A-43F9-A90B-91641119735E}</Project>
+      <Name>WhiteSpot.EasyPrintWeb</Name>
+      <Private>True</Private>
+      <RoleType>Web</RoleType>
+      <OutputItemType>SharePointWebProjectOutput</OutputItemType>
+      <RoleName>WhiteSpot.EasyPrintWeb</RoleName>
+      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources %28Host Web%29\Resources.resx">
+      <OpcRelationship>content-defaultresource</OpcRelationship>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources %28Host Web%29\Resources.en.resx">
+      <OpcRelationship>content-resource</OpcRelationship>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources %28Host Web%29\Resources.en-US.resx">
+      <OpcRelationship>content-resource</OpcRelationship>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources %28Host Web%29\Resources.en-CA.resx">
+      <OpcRelationship>content-resource</OpcRelationship>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EasyPrintAppPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e6a799cb-cfe6-43af-a018-616a9b176161}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

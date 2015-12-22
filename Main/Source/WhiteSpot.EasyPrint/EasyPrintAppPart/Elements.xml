@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ClientWebPart Name="EasyPrintAppPart" 
+				   Title="Easy Print" 
+				   Description="This web part displays all of the links to documents in a given list, and combines the selected documents into a single PDF document." 
+				   DefaultWidth="600" 
+				   DefaultHeight="600">
+
+		<Content Type="html" Src="~remoteAppUrl/Pages/EasyPrintWebPart.aspx?{StandardTokens}&amp;ListTitle=_ListTitle_&amp;MaxNumberOfItems=_MaxNumberOfItems_&amp;ButtonText=_ButtonText_&amp;editmode=_editMode_" />
+
+		<Properties>
+			<Property Name="ListTitle" 
+					  Type="string" 
+					  DefaultValue="" 
+					  WebDisplayName="List Title" 
+					  WebBrowsable="true" 
+					  WebCategory="Custom" 
+					  WebDescription="Enter the title of the Links List that resides in this site." 
+					  RequiresDesignerPermission="false" />
+
+			<Property Name="ButtonText"
+					  Type="string"
+					  DefaultValue="Print all"
+					  WebDisplayName="Button Text"
+					  WebBrowsable="true"
+					  WebCategory="Custom"
+					  WebDescription="The text that will be displayed on the button to combine all of the documents into a sigle PDF document."
+					  RequiresDesignerPermission="false" />
+
+			<Property Name="MaxNumberOfItems"
+					  Type="int"
+					  DefaultValue="100"
+					  WebDisplayName="Max Number of Documents"
+					  WebBrowsable="true"
+					  WebCategory="Custom"
+					  WebDescription="The maximum number of documents that will be available to combine into a single PDF document. If the value is 0 or less, a default of 100 will be used."
+					  RequiresDesignerPermission="false" />
+
+		</Properties>
+
+	</ClientWebPart>
+</Elements>

@@ -1,0 +1,58 @@
+﻿.app-container {
+	padding: 5px;
+}
+
+.hcf-form {
+	margin-bottom: 20px;
+}
+
+.hcf-form input, 
+.hcf-form-submit input {
+	margin-left: 0;
+}
+
+.hcf-form .hcf-form-checkbox:first-child {
+	margin-bottom: 10px;
+}
+
+
+/* messaging */
+
+#ProgressMessage,
+#ResultMessage {
+	margin-bottom: 10px;
+}
+
+#ProgressMessage {
+	background: url('img/ajax-loader.gif') no-repeat 0 1px;
+	display: none;
+}
+
+.hcf-processing #ProgressMessage {
+	display: inline-block;
+	margin-left: 5px;
+	padding-left: 23px;
+}
+
+#ResultMessage .hcf-success,
+#ResultMessage .hcf-error {
+	padding: 10px;
+}
+
+#ResultMessage .hcf-success {
+	background: #cbecc6;
+}
+
+#ResultMessage .hcf-error {
+	background: #bf0000;
+	color: #fff;
+}
+
+#ResultMessage .hcf-error ul li {
+	margin-bottom: 10px;
+}
+
+#ResultMessage .hcf-error a {
+	color: #fff;
+	text-decoration: underline;
+}

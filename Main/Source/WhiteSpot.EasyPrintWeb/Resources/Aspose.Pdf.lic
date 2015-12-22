@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<License>
+  <Data>
+    <LicensedTo>White Spot Limited</LicensedTo>
+    <LicenseType>Developer Small Business</LicenseType>
+    <LicenseNote>Limited to 1 developer.</LicenseNote>
+    <OrderID>130820131944</OrderID>
+    <OEM>This is not a redistributable license</OEM>
+    <Products>
+      <Product>Aspose.Pdf for .NET</Product>
+    </Products>
+    <EditionType>Enterprise</EditionType>
+    <SerialNumber>a9b272d9-eb57-43fc-8c56-4120e92cdf4f</SerialNumber>
+    <SubscriptionExpiry>20140820</SubscriptionExpiry>
+    <LicenseVersion>2.2</LicenseVersion>
+  </Data>
+  <Signature>P9BIqQZ4eH6mib4H+6GfVJiWc/NOKKmXXf4bG2S2PKdFpWJ1lHqs4gFwbpZ8yS95WIYqH9wy8PoWCKnNDw0LP8P4pUMccIdBhQX2233QK4IAvOUeLpRoNfvH/bgQOu2eaDmU/s1SYCIoCHH+Gml+dlC35kx+gKLwrP20fSek4KE=</Signature>
+</License>

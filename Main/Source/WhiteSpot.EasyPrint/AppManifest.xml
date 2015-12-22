@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
+<App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
+     Name="WhiteSpotEasyPrint"
+     ProductID="{c1f3bb5b-0607-440f-8c68-9018219e0da5}"
+     Version="1.0.2.0"
+     SharePointMinVersion="15.0.0.0"
+>
+  <Properties>
+    <Title>White Spot Easy Print</Title>
+    <StartPage>https://easyprint.azurewebsites.net/Pages/Default.aspx?{StandardTokens}</StartPage>
+    <SupportedLocales>
+      <SupportedLocale CultureName="en" />
+      <SupportedLocale CultureName="en-US" />
+      <SupportedLocale CultureName="en-CA" />
+    </SupportedLocales>
+  </Properties>
+
+  <AppPrincipal>
+    <RemoteWebApplication ClientId="3ba56916-2a06-441b-b579-c918d98cf77a" />
+  </AppPrincipal>
+  <AppPermissionRequests>
+    <AppPermissionRequest Scope="http://sharepoint/content/sitecollection" Right="Read" />
+  </AppPermissionRequests>
+</App>

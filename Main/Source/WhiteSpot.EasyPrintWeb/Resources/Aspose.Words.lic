@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<License>
+  <Data>
+    <LicensedTo>Habanero Consulting</LicensedTo>
+    <LicenseType>Developer OEM</LicenseType>
+    <LicenseNote>Limited to 1 developer.</LicenseNote>
+    <OrderID>121012125947</OrderID>
+    <OEM>This is a redistributable license</OEM>
+    <Products>
+      <Product>Aspose.Words for .NET</Product>
+    </Products>
+    <EditionType>Enterprise</EditionType>
+    <SerialNumber>bb12bf63-932d-4d2a-bd57-97e555b23ac2</SerialNumber>
+    <SubscriptionExpiry>20131012</SubscriptionExpiry>
+    <LicenseVersion>2.2</LicenseVersion>
+  </Data>
+  <Signature>vJdLPkqgaU4SBK75oRegGSHiGKGJMQWX4CkcA6hWkPZZ9KFls/mVONi1YUB3r5r3xoy99w/JEtILwzPg4HJby9OWw0IVQCJTzUznI5rCrfCOewCdriUVnPuERQg10K/tqUx12DL+aAxjNaljfRjxPk3LiYcucWzx1+JsF5txvek=</Signature>
+</License>
